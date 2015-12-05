@@ -1,0 +1,216 @@
+@charset "utf-8";
+/*---------------------------------------
+    リセットCSS（編集不要）
+----------------------------------------*/
+#content_feedback {
+  padding: 50px 0;
+  background: #f0eae1;
+}
+#content_feedback .section {
+  background: #ffffff;
+  padding: 50px;
+}
+#new_site {
+  position: relative;
+}
+#new_site .description {
+  overflow: hidden;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 35px;
+}
+#new_site .description .title {
+  font-size: 167%;
+  line-height: 24px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+}
+#new_site .description .txt_note {
+  font-size: 117%;
+  line-height: 1.7em;
+  margin-bottom: 35px;
+}
+#create_site {
+  width: 61.8%;
+  display: inline-block;
+  position: relative;
+  border: 1px solid #cccccc;
+  padding: 20px;
+}
+#create_site .title_box {
+  color: #fff;
+  font-size: 125%;
+  margin-bottom: 20px;
+  padding: 10px 12px;
+  background: #fca550;
+}
+input[type=text] {
+  width: 100%;
+  height: 29px;
+  background-color: #fff;
+  line-height: 27px;
+  padding-left: 8px;
+  color: #333;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 1px;
+  outline: none;
+}
+textarea {
+  width: 100%;
+  background-color: #fff;
+  line-height: 27px;
+  padding-left: 8px;
+  color: #333;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 1px;
+  outline: none;
+}
+.question_column dl {
+  position: relative;
+  margin-bottom: 15px;
+}
+.question_column dt {
+  padding-bottom: 8px;
+  font-weight: bold;
+  font-size: 109%;
+}
+.error{
+  display: none;
+}   
+
+.error_show{
+  color: #ff6633;
+  top: 22px;
+  position: absolute;
+  right: -155px;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  background-color: #f5f5f5;
+  border: 1px solid;
+  border-color: #bbb #bbb #a8a8a8;
+  padding: 8px 16px;
+  z-index: 1201!important;
+}
+.button {
+  width: 100%;
+  text-align: right;
+}
+.button button[type=submit] {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 100%;
+  margin-right: 0px;
+  height: 30px;
+  padding: 0 20px;
+  line-height: 24px;
+}
+button[type=submit] {
+  outline: none;
+  width: 120px;
+  line-height: 42px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  background: #ff6633;
+  color: #ffffff;
+  margin-right: 28px;
+  border: 1px solid #c9c9c9;
+  font-size: 125%;
+  font-weight: bold;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+
+button[type=submit]:visited {
+  outline: none;
+}
+
+input[type=text]:visited,
+textarea:visited {
+  outline: none;
+}
+.help_symbol {
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  margin-left: 5px;
+  padding: 0px 4px;
+  border: 1px solid #aaa;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 8px;
+  color: #aaa;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 14px;
+  cursor: pointer;
+}
+.help_symbol:hover {
+  color: #888;
+  border-color: #888;
+}
+.help_note {
+  position: relative;
+}
+.help_txt {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 115px;
+}
+.help_txt .note {
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  background-color: #f5f5f5;
+  border: 1px solid;
+  border-color: #bbb #bbb #a8a8a8;
+  padding: 16px;
+  position: absolute;
+  z-index: 1201!important;
+}
+
+#help_column {
+  width: 32%;
+  display: inline-block;
+  vertical-align: top;
+}
+#name {
+  margin-top: 89px;
+}
+#email {
+  margin-top: 17px;
+}
+#tel {
+  margin-top: 18px;
+}
+span.error_show:after,
+span.error_show:before {
+  content:"";
+  width:0;
+  height:0;
+  position:absolute;
+  border: 6px solid transparent;
+}
+span.error_show:after {
+  border-right: 6px solid #f5f5f5;
+  top: 9px;
+  left: -12px;
+}
+span.error_show:before {
+  border-right: 8px solid rgba(0,0,0,0.2);
+  top: 9px;
+  left: -15px;
+}

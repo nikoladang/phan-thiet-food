@@ -18,5 +18,8 @@ from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
+    # url(r'^$ ', 'phan-thiet-food.views.home', name='home'),
     url(r'^admin/', admin.site.urls),
+    #url(r'^contact/', 'contact.views.home', name='home'),
+    url(r'^$', 'contact.views.home', name='home'),
 ]

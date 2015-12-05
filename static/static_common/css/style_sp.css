@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*---------------------------------------
+    sp
+----------------------------------------*/
+.nav_title,
+.nav_btn {
+  display: none;
+}
+#header .inner {
+  width: 100%;
+  height: auto;
+}
+.inner {
+  width: 90.64%;
+  padding: 0 4.68%;
+}
+.search_nav form {
+  display: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+#global_nav {
+  min-width: auto;
+}
+#page_top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+
+.box_three,
+.box_one,
+.box_two {
+  width: 100%;
+  padding: 0;
+}
+
+.box_three img {
+  display: none;
+}
+#footer {
+  min-width: auto;
+}
+
+.navbar_nav li.lipadding {
+  float: none;
+}
+.menu_line_bottom {
+  display: none;
+}
