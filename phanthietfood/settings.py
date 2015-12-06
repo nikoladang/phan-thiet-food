@@ -129,3 +129,6 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = "/Users/loannguyen/virtualenv/phan-thiet-food/static_in_env/"
 
+
+EMAIL_BACKEND = "sgbackend.SendGridBackend"
+SENDGRID_API_KEY = "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"
