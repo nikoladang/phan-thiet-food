@@ -62,48 +62,10 @@
           <div class="form">
             <div class="question_column">
               <form id="the_form" method="POST" action=".">{% csrf_token %}
-                <fieldset>
-                    <dl>
-                      <dt>Họ và tên:</dt>
-                      <dd>
-                        <input type="text" id="contact_name" class="name" name="full_name">
-                        <span class="error" id="error_name">This field is required</span>
-                      </dd>
-                    </dl>
-                    <dl>
-                      <dt>Địa chỉ email:</dt>
-                      <dd>
-                        <input type="text" id="contact_email" class="email" name="email">
-                        <span class="error" id="error_email">A valid email address is required</span>
-                      </dd>
-                    </dl>
-                    <dl>
-                      <dt>Điện thoại:</dt>
-                      <dd>
-                        <input type="text" id="contact_tel"class="tel" name="phone">
-                        <span class="error" id="error_tel">A valid phone is required</span>
-                      </dd>
-                    </dl>
-                    <dl>
-                      <dt>Tiêu đề:</dt>
-                      <dd>
-                        <input type="text" id="contact_tel"class="tel" name="title">
-                        <span class="error" id="error_tel">This field is required</span>
-                      </dd>
-                    </dl>
-                    <dl class="help_note">
-                      <dt class="text_area"><span>Thông điệp:</span><span id="alert_help" class="help_symbol">?</span></dt>
-                      <dd>
-                        <textarea cols="70" rows="7" id="contact_comment" class="comment" name="message"></textarea>
-                        <span class="error" id="error_comment">This field is required</span>
-                      </dd>
-                      <dd class="help_txt">
-                        <div class="note">Ví dụ: Giá bánh mỳ xá xíu KFC Tuyên Quang là 15k, không phải 12k giá bánh mỳ xá xíu KFC Tuyên Quang là 15k, không phải 12k</div>
-                      </dd>
-                    </dl>
-                    <p class="button">
-                      <button type="submit" class="confirm" id="confirm">Gửi</button>
-                    </p>
+                {{ form }}
+                <p class="button">
+                  <button type="submit" class="confirm" id="confirm">Gửi</button>
+                </p>
                 </fieldset>
               </form>
             <!-- /.question_column --></div>
