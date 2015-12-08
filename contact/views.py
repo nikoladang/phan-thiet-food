@@ -26,20 +26,6 @@ def home(request):
 
         # email sending
         try:
-            print(instance.full_name)
-            print(instance.email)
-            print(instance.phone)
-            # print(instance.title)
-            print(instance.message)
-            # mail = EmailMultiAlternatives(
-				# subject="[PhanThietFood] Contact | %s - %s" % (instance.full_name, instance.title),
-    			# body=instance.message,
-	 		# 	from_email="%s <ptf@phanthietfood.com>" % (instance.full_name),
-            #     # from_email="Yamil Asusta <ptf@phanthietfood.com>",
- 			# 	to=["ptf@phanthietfood.com"],
-			 #    headers={"Reply-To": "ptf@phanthietfood.com"}
-            # )
-            # # mail.attach_alternative("<p>This is a simple HTML email body</p>", "text/html")
             mail_subject="[PhanThietFood] Contact | %s - %s" % (instance.full_name, instance.title)
             mail_body="Full name: " + instance.full_name + "<br>" + \
                         "Email: " + instance.email +  "<br>"  + \
@@ -50,12 +36,12 @@ def home(request):
             mail_to=["ptf@phanthietfood.com"]
             mail_headers={"Reply-To": "ptf@phanthietfood.com"}
             mail = EmailMultiAlternatives(
-				subject=mail_subject,
-    			body=mail_body,
-	 			from_email=mail_from_email,
+                subject=mail_subject,
+                body=mail_body,
+                from_email=mail_from_email,
                 # from_email="Yamil Asusta <ptf@phanthietfood.com>",
- 				to=mail_to,
-			    headers=mail_headers
+                to=mail_to,
+                headers=mail_headers
             )
             mail.attach_alternative(mail_body, "text/html")
             mail.send()
