@@ -1,5 +1,10 @@
+{#{% extends 'base.html' %}#}
+
+{% block title_head %} Welcome | {% endblock %}
+
 {% load staticfiles %}
 
+{% block content %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="vi" xml:lang="vi" dir="ltr">
 <head>
@@ -11,11 +16,9 @@
 <meta name="copyright" content="" />
 <title>Phản hồi | {{ title }}</title>
 <link rel="shortcut icon" href="{% static "static_common/img/favicon.ico" %}">
-<link href="{% static "static_common/css/style.css" %}" rel="stylesheet" type="text/css" media="all" />
-<link href="{% static "contact/css/index.css"%}" rel="stylesheet" type="text/css" media="all" />
 <script src="{% static "static_common/js/jquery-v1.10.2.js" %}" type="text/javascript"></script>
 <script src="{% static "static_common/js/scroll.js" %}" type="text/javascript"></script>
-<script src="{% static "contact/js/feedback.js" %}" type="text/javascript"></script>
+<script src="{% static 'contact/js/feedback.js' %}" type="text/javascript"></script>
     <script type="text/javascript">
         var _urq = _urq || [];
         _urq.push(['initSite', 'cdbe2ef9-63ee-45d4-afcd-00760e44a6f3']);
@@ -149,3 +152,5 @@
 </div>
 </body>
 </html>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% load staticfiles %}
+
+<div id="header">
+  <div class="inner clearfix">
+    <div class="nav">
+      <div class="nav_title">
+        <h1>Phan thiết food cung cấp các món ngon cho mọi người</h1>
+      <!--/ .nav_title --></div>
+      <div class="nav_btn">
+        <div class="btn_top">
+          <ul>
+            <li><a href="#"><img src="{% static 'static_common/img/btn-work_online_top.png' %}" height="22" width="208" alt="Làm app game facebook"></a></li>
+            <li class="icon_top"><a href="#"><img src="{% static 'static_common/img/ico-twitter_top.png' %}" height="23" width="22" alt="twitter"></a></li>
+            <li><a href="https://www.facebook.com/Phan-Thi%E1%BA%BFt-Food-phanthietfoodcom-431273600405979/?ref=hl" target="_blank"><img src="{% static 'static_common/img/ico-facebook_top.png' %}" height="23" width="22" alt="facebook"></a></li>
+          </ul>
+        <!--/ .btn_top --></div>
+      <!--/ .nav_btn --></div>
+    <!--/ .nav --></div>
+  <!--/ .inner --></div>
+<!--/ #header --></div>
+<div id="global_nav">
+  <div class="nav inner clearfix">
+    <div class="navbar_logo">
+      <a href="/"><img src="{% static 'static_common/img/logo-phanthiet_food.png' %}" height="87" width="66" alt="phan thiết food"></a>
+    <!--/ .navbar_logo --></div>
+    <div class="search_nav">
+      <form action="index_submit" method="post" accept-charset="utf-8">
+        <div id="search_btn">
+          <input type="button" class="submit" value="">
+          <input type="text" class="inter_text" name="search_btn" value="">
+        <!--/ #search_btn --></div>
+      </form>
+      <div class="navbar_nav">
+        <ul>
+          <li class="active lipadding"><a href="#">Trang Chủ<small>Home</small></a></li>
+          <li class="lipadding"><a href="#">Ăn Uống<small>Foods</small></a></li>
+          <li class="lipadding"><a href="/travel">Du Lịch<small>Travel</small></a></li>
+          <li class="lipadding"><a href="#">Giải Trí<small>Funny</small></a></li>
+          <li><a href="/contact">Hỗ trợ<small>Support</small></a></li>
+        </ul>
+      <!--/ .navbar_nav --></div>
+    <!--/ .search_nav --></div>
+  <!--/ .inner --></div>
+  <div id="born_digital_top">
+    <div class="inner">
+    <div class="img_born">
+      <img src="{% static 'static_common/img/img-phanthiet_food_top.png' %}" height="30" width="190" alt="phanthietfood.com">
+    <!--/ .img_born --></div>
+    </div>
+  <!--/ #born_digital_top --></div>
+<!--/ #global_nav --></div>

@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>{% block title_head %}{% endblock %} | Phan Thiet Food - Food Full & Fun</title>
+
+  {% include 'base-css.html' %}
+  </head>
+  <body>
+
+    <div class="header">
+        {% block header %}
+            {% include "header.html" %}
+            {% include 'navbar.html' %}
+        {% endblock %}
+    </div>
+
+    <div class="container">
+        {% block content %}
+{#        {% block jumbotron %}#}
+{#        {% endblock %}#}
+        {% endblock %}
+    </div> <!-- /container -->
+
+    <div class="footer">
+        {% block footer %}
+            {% include "footer.html" %}
+        {% endblock %}
+    </div>
+    {% include "base-javascript.html" %}
+
+  </body>
+</html>

@@ -8,7 +8,8 @@ from .forms import ContactForm
 from django.core.mail import EmailMultiAlternatives
 
 # Create your views here.
-def home(request):
+
+def contact(request):
     title = "Welcome"
     # if request.user.is_authenticated():
     #     title = "%s -  Phan Thiet Food" % (request.user)
@@ -51,4 +52,4 @@ def home(request):
     else:
         print("FORM INVALID")
 
-    return render(request, "home.html", context)
+    return render(request, "contact.html", context)
