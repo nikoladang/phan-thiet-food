@@ -24,7 +24,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     #url(r'^contact/', 'contact.views.home', name='home'),
     url(r'^$', 'phanthietfood.views.home', name='home'),
-    url(r'^travel/$', 'phanthietfood.views.home', name='travel'),
+    url(r'^travel/$', 'travel.views.travel', name='travel'),
     url(r'^contact/$', 'contact.views.contact', name='contact'),
 ]
 

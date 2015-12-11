@@ -12,7 +12,7 @@ content:".";display:block;visibility:hidden;height:0.1px;font-size:0.1em;line-he
 
 body {
   color: #000;
-  font-size: 76%;
+  /*font-size: 76%;*/  /*Thinh comment on 151211*/
   background: #fff;
   overflow: hidden;  
   font-family: Arial,Helvetica,sans-serif;
