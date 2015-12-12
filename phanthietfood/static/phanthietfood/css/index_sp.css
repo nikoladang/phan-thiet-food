@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+
+#content_list {
+  margin-bottom: 30px;
+}
+.navbar_logo {
+  width: 6%;
+}
+.img_born {
+  display: none;
+}
+/*
+   #contents  .slideshow
+----------------------------------------*/
+.slideshow {
+  margin: 0 0 25px;
+}
+.slideshow .inner {
+  width: 100%;
+  padding: 0;
+  height: auto;
+}
+#nav_item {
+  display: none;
+}
+#slide_img {
+  width: 100%;
+  height: auto;
+}
+.slide_thumbs {
+  float: none;
+  width: 100%;
+}
+#slide_img img {
+  width: 100%;
+  height: auto;
+}
+#number {
+  display: block;
+}
+#contents .section_content li {
+  width: 48%;
+  float: left;
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+#contents .section_content li:nth-child(2n) {
+  width: 48%;
+  float: right;
+}
+#contents .section_content .photo img {
+  width: 100%;
+  height: auto;
+}
+.video_box li {
+  background-position: 98% center; 
+}
+.aside,
+.acticle {
+  float: none;
+  width: 100%;
+}
+.acticle {
+  margin-bottom: 20px;
+}
+.box_face {
+  display: none;
+}
+
+.box_one h3, .box_two h3 {
+  font-size: 117%;
+  margin-bottom: 10px;
+}
+.box_two {
+  margin-top: 20px;
+}
+.box_menu li span {
+  font-size: 109%;
+}
+.acticle .list_food li {
+  width: 50%;
+}
+.video_tip {
+  margin-bottom: 0;
+}
+.box_item p {
+  font-size: 100%;
+}
+.video_box a {
+  font-size: 109%;
+}
+#contents .text_title .title small,
+.acticle .title small {
+  display: none;
+}
+#contents .section_content .price_food .view {
+  float: left;
+  margin-top: 8px;
+}
+.section_phanthiet {
+  margin-top: 25px;
+}
+.acticle .list_food li span {
+  font-size: 109%;
+  line-height: 1.45em;
+}
+.section_phanthiet .ico_title span,
+#contents .text_title .title span,
+.acticle .title .ico_list {
+  font-size: 134%;
+}
+.acticle .title .ico_list {
+    padding-left: 28px;
+    display: block;
+    background: url(../img/ico-list_topic.png) no-repeat left center;
+}
+.travel_box {
+  width: 100%;
+  position: relative;
+}
+.travel_box ul {
+  padding: 0;
+}
+.travel_box ul li .img {
+  width: 100%;
+  height: 100%;
+}
+
+.prev_next {
+  display: block;
+}
+.prev_next {
+  width: 95%;
+  position: absolute;
+  top: 50%;
+}
+
+.prev_next a {
+  width: 11px;
+  height: 16px;
+}
+
+a.ico_prev,
+a.prev {
+  position: absolute;
+  float: left;
+  left: -20px;
+
+}
+a.ico_next,
+a.next {
+  float: right; 
+  right: 0px;
+}
+.disabled {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}

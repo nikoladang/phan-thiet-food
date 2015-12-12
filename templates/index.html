@@ -1,0 +1,333 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+    {{ block.super }}
+    <title>{% block title_head %}INDEX{% endblock %}</title>
+    <link href="{% static 'static_common/css/jquery.fancybox.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{% static 'static_common/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="{% static 'static_common/css/style_sp.css' %}" media="screen and (max-width:767px)">
+    <link href="{% static 'phanthietfood/css/index.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="{% static 'phanthietfood/css/index_sp.css' %}" media="screen and (max-width:767px)">
+
+{% endblock %}
+{% block content %}
+<div class="slideshow clearfix">
+  <div class="inner">
+    <div class="slide_thumbs pull_left">
+      <div id="slide_img">
+        <img src="{% static 'phanthietfood/img/img-slideshow_two.png' %}" width="690" height="302" alt="slide img two">
+        <img src="{% static 'phanthietfood/img/img-slideshow_one.png' %}" width="690" height="302" alt="slide img one">
+        <img src="{% static 'phanthietfood/img/img-slideshow_three.png' %}" width="690" height="302" alt="slide img three">
+      <!-- / .slide_img --></div>
+      <ul id="number">
+        <li class="current_slide_on"><a rel="1" href="#">one</a></li>
+        <li class=""><a rel="2" href="#">two</a></li>
+        <li class=""><a rel="3" href="#">three</a></li>
+      </ul>
+    <!-- / .slide_thumbs --></div>
+    <div class="change_title pull_right">
+        <ul id="nav_item">
+          <li class="current"><a rel="1" href="#">
+            <img src="{% static 'phanthietfood/img/txt-aeron.png' %}" width="80" height="80" alt="About AEON">
+            <span>Nhà Hàng Ngon</span>
+            <small>Giảm giá 50% mỗi ngày cay nồng thích mê ....</small>
+            <small class="view_more">Chi tiết &gt;</small>
+          </a></li>
+          <li class=""><a rel="2" href="#">
+            <img src="{% static 'phanthietfood/img/txt-group.png' %}" width="80" height="80" alt="">
+            <span>Lẩu Dê &amp; Cua 245</span>
+            <small>Khai trương chi nhánh mới ngày 22/11/2016</small>
+            <small class="view_more">Chi tiết &gt;</small>
+          </a></li>
+          <li class=""><a rel="3" href="#">
+            <img src="{% static 'phanthietfood/img/txt-csr.png' %}" width="80" height="80" alt="">
+            <span>Kem lắc baba </span>
+            <small>Vào miệng là tang ngay với mừa hè ôi bức ...</small>
+            <small class="view_more">Chi tiết &gt;</small>
+          </a></li>
+        </ul>
+    <!-- /.change_title --></div>
+  <!-- /.inner --></div>
+<!-- / #slideshow--></div>
+<div id="contents">
+  <div class="text_title img_bt">
+    <div class="inner">
+      <h2 class="title"><span>Gian hàng buôn bán</span><small>The area market online</small></h2>
+    <!--/ .inner --></div>
+  <!--/ .text_title --></div>
+  <div class="section_content">
+    <div class="inner">
+      <ul>
+        <li class="first">
+          <a href="http://khu13.com/" target="_blank">
+            <span class="photo"><img src="{% static 'phanthietfood/img/img-nuocmam.png' %}" height="214" width="230" alt="" /></span>
+            <div class="name_food">
+              <span class="name_vn">Xôi Mít Lá Dứa - Hộp Nhỏ</span>
+              <span class="name_en">Mit Si-flung Gon - Delivery</span>
+            </div>
+            <div class="price_food">
+              <span class="price">60.000đ/1lit</span>
+              <span class="view">Đặt hàng</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="photo"><img src="{% static 'phanthietfood/img/img-nuocmam.png' %}" height="214" width="230" alt="" /></span>
+            <div class="name_food">
+              <span class="name_vn">Xôi Mít Lá Dứa - Hộp Nhỏ</span>
+              <span class="name_en">Mit Si-flung Gon - Delivery</span>
+            </div>
+            <div class="price_food">
+              <span class="price">60.000đ/1lit</span>
+              <span class="view">Đặt hàng</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="photo"><img src="{% static 'phanthietfood/img/img-nuocmam.png' %}" height="214" width="230" alt="" /></span>
+            <div class="name_food">
+              <span class="name_vn">Xôi Mít Lá Dứa - Hộp Nhỏ</span>
+              <span class="name_en">Mit Si-flung Gon - Delivery</span>
+            </div>
+            <div class="price_food">
+              <span class="price">60.000đ/1lit</span>
+              <span class="view">Đặt hàng</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="photo"><img src="{% static 'phanthietfood/img/img-nuocmam.png' %}" height="214" width="230" alt="" /></span>
+            <div class="name_food">
+              <span class="name_vn">Xôi Mít Lá Dứa - Hộp Nhỏ</span>
+              <span class="name_en">Mit Si-flung Gon - Delivery</span>
+            </div>
+            <div class="price_food">
+              <span class="price">60.000đ/1lit</span>
+              <span class="view">Đặt hàng</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    <!-- /.inner --></div>
+  <!-- /.section_content --></div>
+
+<div class="section_phanthiet">
+  <div class="inner">
+    <div class="main_title">
+      <h3 class="ico_title"><span>Chiêm ngưỡng vẻ đẹp Phan Thiêt- Mũi Né</span></h3>
+    <!-- /.main_title --></div>
+  <!-- /.inner --></div>
+  <div class="travel_box">
+    <div class="inner clearfix">
+      <ul id="bnr_book" id="clearfix">
+        <li><span class="img"><img src="{% static 'phanthietfood/img/img-phan_thiet_doi_cat.png' %}" width="134" height="134" alt="Đồi cát" /></span>
+            <span class="txt">Đồi cát</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/img/img-phan_thiet_bien.png' %}" width="134" height="134" alt="Bãi biển" /></span>
+            <span class="txt">Bãi biển</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/img/img-phan_thiet_bau_trang.png' %}" width="134" height="134" alt="Bàu trắng" /></span>
+            <span class="txt">Bàu trắng</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/img/img-phan_thiet_suoi_tien.png' %}" width="134" height="134" alt="Suối tiên" /></span>
+            <span class="txt">Suối tiên</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/img/img-phan_thiet_hon_rom.png' %}" width="134" height="134" alt="Hòn rơm" /></span>
+            <span class="txt">Hòn rơm</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/img/img-phan_thiet_mui_ke_ga.png' %}" width="134" height="134" alt="Mũi kê gà" /></span>
+            <span class="txt">Mũi kê gà</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/img/img-phan_thiet_nui_ta_cu.png' %}" width="134" height="134" alt="Núi tà cú" /></span>
+            <span class="txt">Núi tà cú</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/img/img-phan_thiet_thap_cham.png' %}" width="134" height="134" alt="Tháp chăm" /></span>
+            <span class="txt">Đồi cát</span>
+        </li>
+         <li><span class="img"><img src="{% static 'phanthietfood/img/img-phan_thiet_thanh_long.png' %}" width="134" height="134" alt="Thanh long" /></span>
+            <span class="txt">Thanh long</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/img/img-phan_thiet_tom_tit.png' %}" width="134" height="134" alt="Tôm tít" /></span>
+            <span class="txt">Tôm tít</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/' %}img/img-phan_thiet_ca_bo.png" width="134" height="134" alt="Cá bò hòm" /></span>
+            <span class="txt">Cá bò hòm</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/' %}img/img-phan_thiet_ge.png" width="134" height="134" alt="Gẹ phan thiết" /></span>
+            <span class="txt">Gẹ</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/' %}img/img-phan_thiet_so.png" width="134" height="134" alt="Sò phan thiết" /></span>
+            <span class="txt">Sò nướng</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/' %}img/img-phan_thiet_my_quang.png" width="134" height="134" alt="Mỳ quảng phan thiết" /></span>
+            <span class="txt">Mỳ quảng</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/' %}img/img-phan_thiet_banh_canh.png" width="134" height="134" alt="Bánh canh phan thiết" /></span>
+            <span class="txt">Bánh canh</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/' %}img/img-phan_thiet_banh_can.png" width="134" height="134" alt="Bánh căn phan thiết" /></span>
+            <span class="txt">Bánh căn</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/' %}img/img-phan_thiet_cha_ca.png" width="134" height="134" alt="Chả cá phan thiết" /></span>
+            <span class="txt">Chả cá</span>
+        </li>
+        <li><span class="img"><img src="{% static 'phanthietfood/' %}img/img-phan_thiet_nuoc_mam.png" width="134" height="134" alt="Nước mắm phan thiết" /></span>
+            <span class="txt">Nước mắm</span>
+        </li>
+      </ul>
+      <div class="prev_next clearfix">
+        <a href="#" class="ico_prev" id="ico_prev"><img src="{% static 'phanthietfood/' %}img/ico-pre_content.png" height="16" width="11" alt="prev" /></a>
+        <a href="#" class="ico_next" id="ico_next"><img src="{% static 'phanthietfood/' %}img/ico-next_content.png" height="16" width="11" alt="next" /></a>
+      <!--/ prev_next --></div>
+    <!-- /.inner --></div>
+  <!-- /.travel_box --></div>
+<!-- /.section_phanthiet --></div>
+
+<div id="content_list">
+  <div class="inner clearfix">
+    <div class="acticle clearfix">
+      <h4 class="title img_bt"><span class="ico_list">Địa điểm các món ăn ở Phan Thiết</span>
+        <small>Locations food at Phan Thiet - Mui Ne</small></h4>
+      <div class="list_food">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="ico_food"><img src="{% static 'phanthietfood/' %}img/ico-breakfast_off.png" alt="Ăn Sáng" width="190" height="118" /></span>
+              <span class="detail_list_vn">Ăn Sáng<small>[10 địa điểm]</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="ico_food"><img src="{% static 'phanthietfood/' %}img/ico-lunch_off.png" alt="Ăn Trưa" width="190" height="118" /></span>
+              <span class="detail_list_vn">Ăn Trưa<small>[10 địa điểm]</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="ico_food"><img src="{% static 'phanthietfood/' %}img/ico-lunch_more_off.png" alt="Ăn Chiều" width="190" height="118" /></span>
+              <span class="detail_list_vn">Ăn Chiều<small>[10 địa điểm]</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="ico_food"><img src="{% static 'phanthietfood/' %}img/ico-dinner_off.png" alt="Ăn Tối" width="190" height="118" /></span>
+              <span class="detail_list_vn">Ăn Tối<small>[10 địa điểm]</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="ico_food"><img src="{% static 'phanthietfood/' %}img/ico-snacks_off.png" alt="Ăn Vặt" width="190" height="118" /></span>
+              <span class="detail_list_vn">Ăn Vặt<small>[10 địa điểm]</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="ico_food"><img src="{% static 'phanthietfood/' %}img/ico-drink_off.png" alt="Nước Uống" width="190" height="118" /></span>
+              <span class="detail_list_vn">Nước Uống<small>[10 địa điểm]</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="ico_food"><img src="{% static 'phanthietfood/' %}img/ico-noodle_off.png" alt="Bún/Phở/Mỳ" width="190" height="118" /></span>
+              <span class="detail_list_vn">Bún/Phở/Mỳ<small>[10 địa điểm]</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="ico_food"><img src="{% static 'phanthietfood/' %}img/ico-cake_off.png" alt="Bánh Kem" width="190" height="118" /></span>
+              <span class="detail_list_vn">Bánh Kem<small>[10 địa điểm]</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="ico_food"><img src="{% static 'phanthietfood/' %}img/ico-rice_off.png" alt="Cơm" width="190" height="118" /></span>
+              <span class="detail_list_vn">Cơm<small>[10 địa điểm]</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="ico_food"><img src="{% static 'phanthietfood/' %}img/ico-bread_off.png" alt="Bánh Mì" width="190" height="118" /></span>
+              <span class="detail_list_vn">Bánh Mì<small>[10 địa điểm]</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="ico_food"><img src="{% static 'phanthietfood/' %}img/ico-burnt_rice_off.png" alt="Cơm Chay" width="190" height="118" /></span>
+              <span class="detail_list_vn">Cơm Chay<small>[10 địa điểm]</small></span>
+            </a>
+          </li>
+        </ul>
+      <!-- /.list_food --></div>
+    <!--/ .acticle --></div>
+    <div class="aside clearfix">
+      <div class="video_tip">
+        <div class="box_item clearfix">
+            <h4><span class="ico_tips">Mẹo vặt &amp; Video</span></h4>
+            <p>Chúng tôi đăng tải các video hay liên quan về nấu ăn giúp các bạn nấu ăn ngon cho gia đình mình.</p>
+        <!--/ .box_item --></div>
+        <div class="video_box">
+          <ul class="list">
+            <li>
+              <a class="fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo">
+                <span class="post_mark video_blog">Video</span>
+                <span class="txt">Cách làm Bánh Tokyku</span>
+              </a>
+            </li>
+            <li>
+              <a class="fancybox-media" href="http://vimeo.com/36031564">
+                <span class="post_mark video_blog">Video</span>
+                <span class="txt">Cơm gà bó xôi cùng nắm mèo</span>
+              </a>
+            </li>
+            <li class="last">
+              <a class="fancybox-media" href="http://twitvid.com/QY7MD">
+                <span class="post_mark video_blog">Video</span>
+                <span class="txt">Bánh Tráng ngâm giấm</span>
+              </a>
+            </li>
+            <li class="view_more"><a href="#">Xem thêm &gt;&gt;</a></li>
+          </ul>
+        <!-- /.video_box --></div>
+      <!-- /.video_tip --></div>
+      <div class="box_face">
+        <div class="fb-page" data-href="https://www.facebook.com/Phan-Thi%E1%BA%BFt-Food-phanthietfoodcom-431273600405979/?ref=hl" data-width="250" data-height="215" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"></div>
+      <!--/ .box_face --></div>
+    <!--/ .aside --></div>
+  <!--/ .inner --></div>
+<!--/ #content_list --></div>
+<!--/ #contents --></div>
+
+{% endblock %}
+
+{% block footer %}
+    {{ block.super }}
+{#    <script src="{% static 'static_common/js/jquery-v1.10.2.js' %}" type="text/javascript"></script>#}
+    <script src="{% static 'static_common/js/jquery.fancybox.js' %}" type="text/javascript"></script>
+    <script src="{% static 'static_common/js/jquery.fancybox-media.js' %}" type="text/javascript"></script>
+    <script src="{% static 'static_common/js/scroll.js' %}" type="text/javascript"></script>
+    <script src="{% static 'static_common/js/carousel_pluin.js' %}" type="text/javascript"></script>
+    <script src="{% static 'phanthietfood/js/slideshow.js' %}" type="text/javascript"></script>
+    <script src="{% static 'phanthietfood/js/hover.js' %}" type="text/javascript"></script>
+    <script src="{% static 'phanthietfood/js/slide_book.js' %}" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $('.fancybox-media')
+            .attr('rel', 'media-gallery')
+            .fancybox({
+              openEffect : 'none',
+              closeEffect : 'none',
+              prevEffect : 'none',
+              nextEffect : 'none',
+              arrows : false,
+              helpers : {
+                media : {},
+                buttons : {}
+              }
+            });
+        });
+    </script>
+{% endblock %}

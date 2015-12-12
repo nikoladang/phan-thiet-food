@@ -52,4 +52,4 @@ def contact(request):
     else:
         print("FORM INVALID")
 
-    return render(request, "contact.html", context)
+    return render(request, "contact2.html", context)
