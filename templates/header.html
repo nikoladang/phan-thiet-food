@@ -40,11 +40,11 @@
       </form>
       <div class="navbar_nav">
         <ul>
-          <li class="active lipadding"><a href="/">Trang Chủ<small>Home</small></a></li>
-          <li class="lipadding"><a href="/food">Ăn Uống<small>Foods</small></a></li>
-          <li class="lipadding"><a href="/travel">Du Lịch<small>Travel</small></a></li>
-          <li class="lipadding"><a href="/fun">Giải Trí<small>Funny</small></a></li>
-          <li><a href="/contact">Hỗ trợ<small>Support</small></a></li>
+          <li class="active lipadding"><a href="{% url 'index' %}">Trang Chủ<small>Home</small></a></li>
+          <li class="lipadding"><a href="{% url 'food' %}">Ăn Uống<small>Foods</small></a></li>
+          <li class="lipadding"><a href="{% url 'travel' %}">Du Lịch<small>Travel</small></a></li>
+          <li class="lipadding"><a href="{% url 'fun' %}">Giải Trí<small>Funny</small></a></li>
+          <li><a href="{% url 'contact' %}">Hỗ trợ<small>Support</small></a></li>
         </ul>
       <!--/ .navbar_nav --></div>
     <!--/ .search_nav --></div>

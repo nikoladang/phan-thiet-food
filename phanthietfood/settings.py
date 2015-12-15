@@ -35,10 +35,12 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #third party apps
     'crispy_forms',
+    'registration',
     #my apps
     'phanthietfood',
     'travel',
@@ -138,4 +140,17 @@ STATIC_ROOT = "/Users/loannguyen/virtualenv/phan-thiet-food/static_in_env/"
 EMAIL_BACKEND = "sgbackend.SendGridBackend"
 SENDGRID_API_KEY = "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"
 
+# Crispy FORM TAGs SETTINGS
 CRISPY_TEMPLATE_PACK = "bootstrap3"
+
+# DJANGO REGISTRATION REDUX SETTINGS
+ACCOUNT_ACTIVATION_DAYS = 7
+REGISTRATION_AUTO_LOGIN = True
+SITE_ID = 1
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST ='smtp.sendgrid.net'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'phanthietfoodsendgrid'
+EMAIL_HOST_PASSWORD = 'Phanthietfoodsendgrid987' #This is not your gmail password.
+EMAIL_USE_TLS = True
