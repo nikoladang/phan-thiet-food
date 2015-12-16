@@ -4,7 +4,7 @@
   <div class="inner clearfix">
     <div class="nav">
       <div class="nav_title">
-        <h1>Phan Thiết food cung cấp các món ngon cho mọi người</h1>
+{#        <h1>Phan Thiết food cung cấp các món ngon cho mọi người</h1>#}
       <!--/ .nav_title --></div>
       <div class="nav_btn">
         <div class="btn_top">
@@ -15,17 +15,28 @@
           </ul>
         <!--/ .btn_top --></div>
       <!--/ .nav_btn --></div>
+{#    <div id="nav_btn">#}
+{#      <ul class="nav navbar-nav navbar-right">#}
+{#          {% if request.user.is_authenticated %}#}
+{#            <li><a style="color: red">Welcome {{ request.user }}</a></li>#}
+{#            <li><a style="color: white;"> | </a></li>#}
+{#            <li><a href="{% url 'auth_logout' %}?next=/">Logout</a></li>#}
+{#          {% else %}#}
+{#            <li><a href="{% url 'auth_login' %}?next=/">Login</a></li>#}
+{#            <li><a href="{% url 'registration_register' %}">Register</a></li>#}
+{#          {% endif %}#}
+{#      </ul>#}
+{#    </div>#}
     <div id="nav_btn">
-      <ul class="nav navbar-nav navbar-right">
-          {% if request.user.is_authenticated %}
-            <li><a style="color: red">Welcome {{ request.user }}</a></li>
-            <li><a style="color: white;"> | </a></li>
-            <li><a href="{% url 'auth_logout' %}?next=/">Logout</a></li>
-          {% else %}
-            <li><a href="{% url 'auth_login' %}?next=/">Login</a></li>
-            <li><a href="{% url 'registration_register' %}?next=/">Register</a></li>
-          {% endif %}
-      </ul>
+        <form action="" class="navbar-form navbar-right" method="POST">{% csrf_token %}
+            <div class="form-group">
+                <input type="text" class="form-control loginform" name="username" placeholder="Username" />
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-default">Login</button>
+        </form>
     </div>
     <!--/ .nav --></div>
   <!--/ .inner --></div>

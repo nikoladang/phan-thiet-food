@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from registration.backends.simple.views import RegistrationView
 
 def index(request):
 
@@ -23,3 +24,7 @@ def fun(request):
     }
 
     return render(request, "fun.html", context)
+
+class MyRegistrationView(RegistrationView):
+    def get_success_url(self, request, user):
+        return '/'

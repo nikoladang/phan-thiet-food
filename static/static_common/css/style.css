@@ -53,7 +53,7 @@ body {
 }
 #header .inner {
   z-index: 9999;
-  height: 35px;
+  /*height: 35px;*/ /*Thinh comment on 151216*/
   background: #000;
 }
 .nav_title {

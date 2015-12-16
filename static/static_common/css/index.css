@@ -60,6 +60,10 @@ input[type=text] {
   -webkit-border-radius: 1px;
   outline: none;
 }
+input[type=text] .loginform {
+  .form-control
+}
+
 textarea {
   width: 100%;
   background-color: #fff;
@@ -118,7 +122,7 @@ textarea {
 button[type=submit] {
   outline: none;
   width: 120px;
-  line-height: 42px;
+  /*line-height: 42px;*/ /*Thinh comment on 151216*/
   text-align: center;
   display: inline-block;
   cursor: pointer;
