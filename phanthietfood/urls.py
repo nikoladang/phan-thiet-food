@@ -27,7 +27,8 @@ urlpatterns = [
     url(r'^travel/$', 'travel.views.travel', name='travel'),
     url(r'^fun/$', 'phanthietfood.views.fun', name='fun'),
     url(r'^contact/$', 'contact.views.contact', name='contact'),
-    url(r'^accounts/', include('registration.backends.default.urls'))
+    # url(r'^accounts/', include('registration.backends.default.urls'))
+    url(r'^accounts/', include('registration.backends.simple.urls'))
 ]
 
 if settings.DEBUG:
