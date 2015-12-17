@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  {% block head %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 {#    <meta name="viewport" content="width=device-width, initial-scale=1">#}
@@ -14,10 +13,11 @@
     <meta name="copyright" content="" />
 {#    <link rel="icon" href="../../favicon.ico">#}
     <link rel="shortcut icon" href="{% static 'static_common/img/favicon.ico' %}">
+  <title>{% block head_title %}{% endblock %} | Phan Thiet Food - Food Full & Fun</title>
+  {% block head %}
 
-    <title>{% block title_head %}{% endblock %} | Phan Thiet Food - Food Full & Fun</title>
-    {% include 'base-css.html' %}
   {% endblock %}
+      {% include 'base-css.html' %}
   </head>
   <body>
 
