@@ -18,6 +18,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import url, include
 from django.contrib import admin
+
 from phanthietfood.views import MyRegistrationView
 
 urlpatterns = [
@@ -28,7 +29,7 @@ urlpatterns = [
     url(r'^travel/$', 'travel.views.travel', name='travel'),
     url(r'^fun/$', 'phanthietfood.views.fun', name='fun'),
     url(r'^contact/$', 'contact.views.contact', name='contact'),
-    # url(r'^accounts/', include('registration.backends.default.urls'))
+    # url(r'^accounts/', include('registration.backends.default.urls')),
     url(r'^accounts/', include('registration.backends.simple.urls')),
     # your custom registration view
     url(r'^register/$', MyRegistrationView.as_view(), name='registration_register'),
